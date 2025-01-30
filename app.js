@@ -187,7 +187,7 @@ document.getElementById('submit-btn').addEventListener('click', (event) => {
     };
     console.log(donationData);
 
-    fetch('https://us-central1-quicklyfoodapi.cloudfunctions.net/quicklyfoodapi/submit_donation', {
+    fetch('http://127.0.0.1:5000/submit_donation', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
