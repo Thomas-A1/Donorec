@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonoRec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <h1>DonoRec</h1>
+        <button id="record-btn" class="btn-primary">Record</button>
+    </div>
+
+    <!-- Recorder Name Page -->
+    <div id="recorder-page" class="hidden">
+        <button id="back-btn" class="btn-back">&#8592;</button> <!-- Back arrow -->
+        <h2>Enter Recorder Name</h2>
+        <input id="recorder-name" type="text" placeholder="Enter your name" required>
+        <p id="error-message" class="error hidden">Name is required!</p>
+        <button id="next-btn" class="btn-primary">Next</button>
+    </div>
+
+
+    <!-- Donation Form Page -->
+    <div id="donation-form-page" class="hidden">
+        <h2>Donation Form</h2>
+        <label for="donation-type">Donation Type</label>
+        <select id="donation-type">
+            <option value="individual">Individual</option>
+            <option value="organization">Organization</option>
+        </select>
+
+        <label for="org-name">Organization Name</label>
+        <input id="org-name" type="text" placeholder="Organization name" disabled value="N/A">
+
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" placeholder="First name">
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" placeholder="Last name">
+
+        <label for="title">Title</label>
+        <select id="title">
+            <option value="Ms.">Ms.</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Anonymous">Anonymous</option>
+        </select>
+
+        <!-- Other Fields as per your instructions -->
+
+        <!-- Gender -->
+        <label for="gender">Gender</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="couple">Couple</option>
+            <option value="anonymous">Anonymous</option>
+        </select>
+
+        <!-- Address -->
+        <label for="address">Address</label>
+        <textarea id="address" placeholder="Enter your address" rows="4" cols="50"></textarea>
+
+
+        <label for="country">Country</label>
+        <input id="country" type="text" placeholder="Country">
+
+        <!-- City/Town -->
+        <label for="city">City/Town</label>
+        <input id="city" type="text" placeholder="City/Town">
+        
+        <!-- Mobile Number -->
+        <label for="mobile">Mobile Number</label>
+        <input id="mobile" type="text" placeholder="Mobile Number">
+        <div id="mobile-error-message" style="color: red; margin-bottom:10px;"class="error-message hidden">Mobile number cannot be empty</div>
+        
+        <!-- Whatsapp Number -->
+        <label for="whatsapp">Whatsapp Number</label>
+        <input id="whatsapp" type="text" placeholder="Whatsapp Number">
+        <label for="same-as-mobile">Same as Mobile?</label>
+        <input id="same-as-mobile" type="checkbox">
+        
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email">
+        <button id="add-email" type="button">Email 2️⃣ +</button>
+        <div id="additional-email-container"></div>
+
+        <!-- Job Title -->
+        <label for="job-title">Job Title</label>
+        <input id="job-title" type="text" placeholder="Job Title">
+        
+        <!-- Employer -->
+        <label for="employer">Employer</label>
+        <input id="employer" type="text" placeholder="Employer">
+        
+        <!-- Donor Category -->
+        <label for="donor-category">Donor Category</label>
+        <input id="donor-category" type="text" placeholder="Donor Category">
+        
+        <!-- Traditional Title -->
+        <label for="traditional-title">Traditional Title</label>
+        <input id="traditional-title" type="text" placeholder="Traditional Title">
+        
+        <!-- Reference -->
+        <label for="reference">Reference</label>
+        <input id="reference" type="text" placeholder="Reference">
+        
+        <!-- Receipt No -->
+        <label for="receipt-no">Receipt No</label>
+        <input id="receipt-no" type="text" placeholder="Receipt No">
+        
+        <!-- Description -->
+        <label for="description">Description</label>
+        <input id="description" type="text" placeholder="Description">
+        
+        <!-- Campaign Event -->
+        <label for="campaign-event">Campaign Event</label>
+        <select id="campaign-event">
+            <option value="2016 Fundraiser">2016 Fundraiser</option>
+            <option value="2017 Fundraiser">2017 Fundraiser</option>
+            <option value="2018 Fundraiser">2018 Fundraiser</option>
+            <option value="2019 Fundraiser">2019 Fundraiser</option>
+            <option value="2020 Fundraiser">2020 Fundraiser</option>
+            <option value="2021 Fundraiser">2021 Fundraiser</option>
+            <option value="2022 Fundraiser">2022 Fundraiser</option>
+            <option value="2023 Fundraiser">2023 Fundraiser</option>
+            <option value="2024 Fundraiser">2024 Fundraiser</option>
+            <option value="2025 Fundraiser">2025 Fundraiser</option>
+        </select>
+
+        <label for="donation-date">Donation Date</label>
+        <input id="donation-date" type="date">
+
+        <label for="registering-date">Registering Date</label>
+        <input id="registering-date" type="date">
+
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method">
+            <option value="cash">Cash</option>
+            <option value="pledge">Pledge</option>
+            <option value="cheque">Cheque</option>
+        </select>
+
+        <label for="currency">Currency</label>
+        <select id="currency">
+            <option value="GHS">GHS</option>
+            <option value="USD">USD</option>
+        </select>
+
+        <label for="recorder">Recorder</label>
+        <input id="recorder" type="text" value="" disabled>
+
+            <!-- Referred by -->
+            <label for="referred-by">Referred By</label>
+            <input id="referred-by" type="text" placeholder="Referred By">
+            
+            <!-- Money Received by -->
+            <label for="money-received-by">Money Received by</label>
+            <input id="money-received-by" type="text" placeholder="Money Received by">
+
+        <label for="amount">Amount</label>
+        <input id="amount" type="number" required>
+        <div style="color:red; margin-bottom:12px;"id="amount-error-message" class="error-message hidden">Amount cannot be empty!</div>
+
+
+        <button type="submit" id="submit-btn" class="btn-primary">Submit Donation</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

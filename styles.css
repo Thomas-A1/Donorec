@@ -1,0 +1,236 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#landing-page {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3182ce;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2b6cb0;
+}
+
+.popup,
+.form {
+    display: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+    border-color: #3182ce;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#donation-form {
+    display: none;
+}
+
+#recorder-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recorder-popup.hidden {
+    display: none;
+}
+
+#donation-form .btn-primary {
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .form,
+    .popup-content {
+        padding: 20px;
+    }
+
+    input,
+    select {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 12px 25px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-back {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    /* Increase size of the arrow */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: #000000;
+
+}
+
+/* Add this to your CSS file */
+.error-border {
+    border: 2px solid red;
+    /* Red border to indicate error */
+}
+
+/* Optional: Add styling for the error message */
+#error-message{
+    color: red;
+    display: none;
+    /* Initially hidden */
+}
+
+#error-message.hidden {
+    display: none;
+}
+
+#error-message:not(.hidden) {
+    display: block;
+}
+
+#next-btn {
+    margin-top: 15px;
+}
+
+
+
+
+
+#add-email{
+    margin-bottom:10px;
+}
+
+
+
+/* Make the form container scrollable */
+#donation-form-page {
+    max-height: 100vh;
+    /* Adjust the height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Ensure form fields and labels are spaced correctly */
+label {
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling for all form fields (inputs, selects, and textareas) */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Textarea specific adjustments */
+textarea {
+    resize: vertical;
+    /* Allows vertical resizing */
+    min-height: 60px;
+    /* Minimum height for textarea */
+}
+
+/* Placeholder styling */
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+/* Focus state */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #fc0000;
+}
+
+
